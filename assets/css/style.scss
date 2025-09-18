@@ -1,4 +1,583 @@
 ---
 ---
 
-@import "jekyll-theme-minimal";
+// Modern Neumorphism SCSS for waydxd.github.io
+
+// Neumorphism Variables - Dark Theme
+:root {
+  --bg-color: #1a1a2e;
+  --surface-color: #16213e;
+  --raised-color: #1e2a47;
+  --inset-color: #12193a;
+  --shadow-dark: rgba(0, 0, 0, 0.5);
+  --shadow-light: rgba(255, 255, 255, 0.05);
+  --primary-gradient: linear-gradient(135deg, #0077b6 0%, #caf0f8 100%);
+  --secondary-gradient: linear-gradient(135deg, #00b4d8 0%, #90e0ef 100%);
+  --accent-gradient: linear-gradient(135deg, #0077b6 0%, #caf0f8 100%);
+  --text-primary: #ffffff;
+  --text-secondary: #caf0f8;
+  --text-light: rgba(255, 255, 255, 0.9);
+}
+
+// Reset and base styles
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  background-attachment: fixed;
+  font-family: "Inter", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+// Neumorphic container
+.wrapper {
+  background: var(--surface-color);
+  border-radius: 20px;
+  box-shadow: 
+    20px 20px 40px var(--shadow-dark),
+    -20px -20px 40px var(--shadow-light);
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "sidebar content"
+    "sidebar footer";
+  height: 100vh;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sidebar"
+      "content"
+      "footer";
+    margin: 0 auto;
+    height: 100vh;
+  }
+}
+
+// Neumorphic header/sidebar
+header {
+  grid-area: sidebar;
+  background: var(--raised-color);
+  border-radius: 15px;
+  box-shadow: 
+    10px 10px 20px var(--shadow-dark),
+    -10px -10px 20px var(--shadow-light);
+  padding: 30px;
+  text-align: center;
+  margin: 10px;
+  h1 {
+    margin: 0 0 20px 0;
+    a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 0.8em;
+      font-weight: 700;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+      transition: all 0.3s ease;
+        padding-top: 1rem;
+      &:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.2);
+      }
+    }
+  }
+
+  img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    box-shadow: 
+      8px 8px 16px var(--shadow-dark),
+      -8px -8px 16px var(--shadow-light);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    opacity: 0.9;
+  }
+
+  .view a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: var(--inset-color);
+    box-shadow: 
+      inset 4px 4px 8px var(--shadow-dark),
+      inset -4px -4px 8px var(--shadow-light);
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      color: #90e0ef;
+    }
+  }
+
+  .downloads {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        display: block;
+        padding: 12px 20px;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        background: var(--raised-color);
+        box-shadow: 
+          6px 6px 12px var(--shadow-dark),
+          -6px -6px 12px var(--shadow-light);
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 
+            8px 8px 16px var(--shadow-dark),
+            -8px -8px 16px var(--shadow-light);
+          color: #90e0ef;
+        }
+
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    border-right: none;
+    border-bottom: 1px solid var(--glass-border);
+    padding: 20px;
+  }
+}
+
+// Main content area
+section {
+  grid-area: content;
+  padding: 40px;
+  background: var(--inset-color);
+  box-shadow: 
+    inset 10px 10px 20px var(--shadow-dark),
+    inset -10px -10px 20px var(--shadow-light);
+  border-radius: 15px;
+  margin: 10px;
+  overflow-y: auto;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+// Typography improvements
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.5em;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: 2px solid var(--glass-border);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: var(--text-secondary);
+}
+
+// Neumorphic elements
+blockquote {
+  background: var(--raised-color);
+  border-radius: 15px;
+  border-left: 4px solid #00b4d8;
+  box-shadow: 
+    8px 8px 16px var(--shadow-dark),
+    -8px -8px 16px var(--shadow-light);
+  padding: 20px;
+  margin: 20px 0;
+
+  p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+}
+
+// Code blocks
+pre {
+  background: var(--inset-color);
+  border-radius: 15px;
+  box-shadow: 
+    inset 8px 8px 16px var(--shadow-dark),
+    inset -8px -8px 16px var(--shadow-light);
+  padding: 20px;
+  overflow-x: auto;
+
+  code {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #e6e6e6;
+  }
+}
+
+code {
+  background: var(--raised-color);
+  border-radius: 8px;
+  box-shadow: 
+    3px 3px 6px var(--shadow-dark),
+    -3px -3px 6px var(--shadow-light);
+  padding: 3px 8px;
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 0.9em;
+  color: #90e0ef;
+}
+
+// Lists
+ul,
+ol {
+  li {
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+  }
+}
+
+// Links
+a {
+  color: #00b4d8;
+  text-decoration: none;
+
+  &:hover {
+    color: #90e0ef;
+  }
+}
+
+// Tables
+table {
+  width: 100%;
+  background: var(--raised-color);
+  border-radius: 15px;
+  box-shadow: 
+    8px 8px 16px var(--shadow-dark),
+    -8px -8px 16px var(--shadow-light);
+  overflow: hidden;
+  margin: 20px 0;
+
+  th,
+  td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--shadow-dark);
+    text-align: left;
+  }
+
+  th {
+    background: var(--inset-color);
+    box-shadow: 
+      inset 2px 2px 4px var(--shadow-dark),
+      inset -2px -2px 4px var(--shadow-light);
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+// Footer
+footer {
+  grid-area: footer;
+  background: var(--raised-color);
+  border-radius: 15px;
+  box-shadow: 
+    6px 6px 12px var(--shadow-dark),
+    -6px -6px 12px var(--shadow-light);
+  padding: 20px 40px;
+  text-align: center;
+  color: var(--text-light);
+  opacity: 0.8;
+  margin: 10px;
+
+  p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+
+  a {
+    color: var(--text-light);
+
+    &:hover {
+      color: #90e0ef;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+// Scrollbar styling
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--inset-color);
+  border-radius: 4px;
+  box-shadow: 
+    inset 2px 2px 4px var(--shadow-dark),
+    inset -2px -2px 4px var(--shadow-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-gradient);
+  border-radius: 4px;
+  box-shadow: 
+    2px 2px 4px var(--shadow-dark),
+    -2px -2px 4px var(--shadow-light);
+
+  &:hover {
+    background: var(--accent-gradient);
+  }
+}
+
+// Animation utilities
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .wrapper {
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+// Neumorphic card component
+.glass-card {
+  width: 240px;
+  height: 360px;
+  background: var(--raised-color);
+  border-radius: 20px;
+  box-shadow: 
+    12px 12px 24px var(--shadow-dark),
+    -12px -12px 24px var(--shadow-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+// macOS-style window controls
+.window-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  background: var(--raised-color);
+  border-radius: 20px;
+  box-shadow: 
+    6px 6px 12px var(--shadow-dark),
+    -6px -6px 12px var(--shadow-light);
+  width: fit-content;
+
+}
+
+.window-controls .control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 
+    2px 2px 4px var(--shadow-dark),
+    -2px -2px 4px var(--shadow-light);
+
+  &:active {
+    box-shadow: 
+      inset 2px 2px 4px var(--shadow-dark),
+      inset -2px -2px 4px var(--shadow-light);
+  }
+}
+
+.window-controls .control.close {
+  background: #ff5f57;
+}
+
+.window-controls .control.minimize {
+  background: #ffbd2e;
+}
+
+.window-controls .control.maximize {
+  background: #28ca42;
+}
+
+.window-controls .control:hover {
+  transform: scale(1.1);
+  box-shadow: 
+    3px 3px 6px var(--shadow-dark),
+    -3px -3px 6px var(--shadow-light);
+}
+
+.window-controls .control.close:hover {
+  background: #ff3b30;
+}
+
+.window-controls .control.minimize:hover {
+  background: #ffb700;
+}
+
+.window-controls .control.maximize:hover {
+  background: #00c853;
+}
+
+// Modern neumorphic button style for buttons and links
+.button-20 {
+  appearance: button;
+  background: var(--raised-color);
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 
+    6px 6px 12px var(--shadow-dark),
+    -6px -6px 12px var(--shadow-light);
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  text-decoration: none; // For links
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #90e0ef;
+    transform: translateY(-2px);
+    box-shadow: 
+      8px 8px 16px var(--shadow-dark),
+      -8px -8px 16px var(--shadow-light);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 
+      inset 4px 4px 8px var(--shadow-dark),
+      inset -4px -4px 8px var(--shadow-light);
+  }
+
+  &:disabled {
+    opacity: .65;
+    pointer-events: none;
+  }
+}

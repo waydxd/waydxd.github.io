@@ -1,123 +1,85 @@
 ---
 layout: default
+title: "Jenson Chan | Portfolio"
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# About Me
 
-[Link to another page](./another-page.html).
+Hi, I’m Jenson — a Comp Sci UG at HKUST (2022–2026) who lives in the computer more than in the real world.  
+I’m a shy Linux enjoyer (I no longer use Arch btw), constantly hopping between distros and obsessively tweaking my desktop environment until it’s *just right*.  
+> *A computer is like air conditioning – it becomes useless when you open Windows.* -- Linus Torvald
 
-There should be whitespace between paragraphs.
+I’m into full‑stack development — I love tweaking frontends just as much as building backend systems. AI fascinates me, but I hate math, so now I’m suffering through the math courses (which I could have chosen not to take) in the CS curriculum.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+---
 
-# Header 1
+# 🎓 Education
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+- **BEng in Computer Science** — The Hong Kong University of Science and Technology  
+  *Sep 2022 – May 2026, Hong Kong*
 
-## Header 2
+- **HKDSE** — Raimondi College  
+  *Sep 2016 – May 2022, Hong Kong*  
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+---
+# 🛠 Projects
 
-### Header 3
+### [**Paopao‑ce**](https://github.com/waydxd/paopao-ce) — Go / Gin‑gonic / Vue.js / MySQL  
+- Forked and maintained a public forum project, fixing dependencies and runtime errors.  
+- Added backend routes, session sharing, moderator tools, NSFW filters, and UI/UX with Naive UI.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+### [**Manganesium**](https://github.com/waydxd/maganesium) — Kotlin / Ktor / Vue.js / MapDB  
+- Built a full‑stack search engine with scoring, phrase matching, and SPA frontend.  
+- Developed async crawler, optimized inverted index with caching.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+### [**Exam Management System**](https://github.com/waydxd/COMP3111-Project) — Java / JOOQ / JavaFX / SQLite  
+- Created GUI‑based exam management system with role‑based portals.  
+- Implemented question bank, grading, and statistics with high test coverage.
 
-#### Header 4
+---
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+# 📚 Course Portfolio
 
 
-### Definition lists can be used with HTML syntax.
+## COMP 4461 — Human Computer Interaction
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+A chronological collection of reflections, design work, and learning milestones.
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+### Contents
 
-```
-The final element.
-```
+1. [Week 1 — Introduction to COMP4461 & HCI](#) *(P1.0 Project 1 Topic release)*
+2. [Week 2 — Human-Centric Design](#) *(Lab0: Tips for Personal Portfolio)*
+3. [Week 3 — Understanding Humans I](#)
+4. [Week 4 — Understanding Humans II](#) *(Project group formation)*
+5. [Week 5 — Design: Empathize](#) *(Lab: Project Management Tool)*
+6. [Week 6 — Design: Ideate & P1 Brainstorming Presentation](#) *(P1.1–P1.2)*
+7. [Week 7 — Multimodal Interaction](#) *(P1.3 Personal Diary Submission)*
+8. [Week 8 — Human-Robot Interaction (HRI)](#) *(P2.0 Project 2 Topic release)*
+9. [Week 9 — Design: Prototyping](#)
+10. [Week 10 — Ubiquitous Computing](#)
+11. [Week 11 — Evaluation: Preparation & Questionnaire](#) *(Lab: HRI Programming I, Final Video Paper Topic release)*
+12. [Week 12 — Evaluation: Heuristic Testing](#) *(Lab: HRI Programming II)*
+13. [Week 13 — Evaluation: Usability Testing](#)
+14. [Week 14 — Mid-term Exercise I](#)
+15. [Week 15 — Project: P2 Presentation](#) *(P2.1–P2.3)*
+16. [Week 16 — Extended Reality](#) *(P3.0 Project 3 Topic release, Lab: XR Programming)*
+17. [Week 17 — CSCW & Social Computing](#)
+18. [Week 18 — Crowd Computing](#)
+19. [Week 19 — Evaluation: Result Analysis](#)
+20. [Week 20 — Final Video Paper Showcase](#)
+21. [Week 21 — Computing for Good (Persuasion)](#) *(Persuasive Technologies)*
+22. [Week 22 — Computing for Good (Accessibility)](#) *(Assistive Technologies)*
+23. [Week 23 — Mid-term Exercise II](#)
+24. [Week 24 — HCI: From Lab to the Real World](#)
+25. [Week 25 — Project: P3 Presentation](#) *(P3.1–P3.3)*
+
+> *Each entry links to a dedicated page with notes, images, and deliverables.*
+
+---
+
+# 🎧 Hobbies & Random Facts
+- Not a sports person at all.  
+- Obsessed with indie‑pop — especially old Grimes tracks (Miss Anthropocene is good tho), Pearly Drops, Magdalena Bay... 
+- Sometimes I drift into Lorde’s discography.  
+- Trying to treasure the older Grimes era. 請格萊美鼠再出一張像藝術天使般高質的專輯 🙏 
+- Still figuring myself out, just like everyone else.

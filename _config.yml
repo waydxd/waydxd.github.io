@@ -1,6 +1,15 @@
-title: Minimal theme
+title: Jenson Chan
 logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+description: HKUST CS
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+email: waydxd@outlook.com
+linkedin: https://www.linkedin.com/in/jenson-chan-090002256/
+
+# GitHub Pages specific configuration
+github : {
+  repository_url: "https://github.com/waydxd"
+}
+url: https://waydxd.github.io
+baseurl: ""
