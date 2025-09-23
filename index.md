@@ -49,15 +49,6 @@ I'm passionate about full-stack development — I love crafting frontends just a
 
 ---
 
-## 📚 Academic Portfolio
-
-### Current Courses
-<!-- - **[COMP 4461 — Human Computer Interaction](/courses/COMP4461.html)**   -->
-  *Exploring user-centered design, prototyping, and evaluation methods*
-  - [Project 1 Personal Portfolio & Reflections](/courses/COMP4461-P1-personal-portfolio.html)
-
----
-
 ## 🎧 Beyond Code
 
 - Not a sports person at all.
