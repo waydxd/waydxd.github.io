@@ -235,6 +235,21 @@ h3 {
   color: var(--text-secondary);
 }
 
+// Horizontal rule styling (Markdown '---')
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  margin: 2.5rem 0; // more breathing room above/below
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  hr {
+    margin: 1.5rem 0;
+  }
+}
+
 // Neumorphic elements
 blockquote {
   background: var(--raised-color);
