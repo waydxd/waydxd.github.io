@@ -48,10 +48,10 @@ body {
     20px 20px 40px var(--shadow-dark),
     -20px -20px 40px var(--shadow-light);
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 360px 1fr;
   grid-template-rows: 1fr auto;
   grid-template-areas:
     "sidebar content"
@@ -140,6 +140,55 @@ header {
       transform: translateY(-2px);
       color: #90e0ef;
     }
+  }
+
+  /* Boxed widgets: raised neumorphic (突起) treatment */
+  .widget.boxed {
+    /* dark-theme raised neumorphism with translucent glass feel */
+    color: var(--text-light);
+    padding: 16px 20px;
+    border-radius: 50px;
+    /* subtle translucent layer using theme tones */
+    background: linear-gradient(145deg, rgba(255,255,255,0.02), rgba(0,0,0,0.06));
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.03);
+    box-shadow:
+      8px 8px 20px var(--shadow-dark),
+      -8px -8px 20px var(--shadow-light);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .widget.boxed:hover {
+    transform: translateY(-8px);
+    box-shadow:
+      12px 12px 36px rgba(0,0,0,0.6),
+      -12px -12px 36px rgba(255,255,255,0.03);
+    color: var(--text-light);
+  }
+
+  /* Make the widgets list scrollable and add comfortable spacing */
+  .widgets-container {
+    gap: 1.5rem; /* increase spacing between boxes so it's visible */
+    max-height: calc(100vh - 260px); /* leave space for header elements */
+    overflow-y: auto;
+    padding-right: 8px; /* prevent content from hiding behind scrollbar */
+  }
+
+  /* Subtle custom scrollbar for boxed widgets */
+  .widgets-container::-webkit-scrollbar {
+
+    width: 10px;
+  }
+  .widgets-container::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 6px;
+  }
+  .widgets-container::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.06);
+    border-radius: 6px;
+    box-shadow: inset 2px 2px 4px rgba(255,255,255,0.02);
+    border: 1px solid rgba(0,0,0,0.25);
   }
 
   .downloads {
@@ -596,3 +645,11 @@ footer {
     pointer-events: none;
   }
 }
+
+img#site-logo {
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+    cursor: default;
+  }

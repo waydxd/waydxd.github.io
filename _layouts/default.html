@@ -10,20 +10,21 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     {% include head-custom.html %}
   </head>
   <body>
     <div class="wrapper">
       <header>
         <div class="window-controls">
-          <button class="control close"></button>
-          <button class="control minimize"></button>
-          <button class="control maximize"></button>
+          <button class="control close" title="Close"></button>
+          <button class="control minimize" title="Minimize"></button>
+          <button class="control maximize" title="Maximize"></button>
         </div>  
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img id="site-logo" src="{{site.logo | relative_url}}" alt="Logo" draggable="false" />
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -33,7 +34,7 @@
         {% endif %}
 
         {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        <p class="view"><a href="{{ '/CV.pdf' | relative_url }}" download="CV.pdf" rel="noopener">Download CV (PDF)</a></p>
         {% endif %}
 
         {% if site.show_downloads %}
@@ -44,17 +45,26 @@
         </ul>
         {% endif %}
 
-        <div class="social-icons" style="margin-top: 1em;">
-        <a href="{{ site.github.repository_url }}" target="_blank" title="GitHub" style="margin-right: 8px;">
-          <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor" style="vertical-align: middle;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+        <div class="social-icons">
+        <a href="{{ site.github.repository_url }}" target="_blank" title="GitHub">
+          <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
         </a>
-        <a href="mailto:{{ site.email }}" target="_blank" title="Email" style="margin-right: 8px;">
-          <svg height="24" width="24" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;"><path d="M12 13.065L2.4 6.6V18h19.2V6.6L12 13.065zm9.6-10.065H2.4C1.074 3 0 4.074 0 5.4v13.2C0 19.926 1.074 21 2.4 21h19.2c1.326 0 2.4-1.074 2.4-2.4V5.4C24 4.074 22.926 3 21.6 3zm0 2.4v.511l-9.6 6.954-9.6-6.954V5.4h19.2z"></path></svg>
+        <a href="mailto:{{ site.email }}" target="_blank" title="Email">
+          <svg height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 13.065L2.4 6.6V18h19.2V6.6L12 13.065zm9.6-10.065H2.4C1.074 3 0 4.074 0 5.4v13.2C0 19.926 1.074 21 2.4 21h19.2c1.326 0 2.4-1.074 2.4-2.4V5.4C24 4.074 22.926 3 21.6 3zm0 2.4v.511l-9.6 6.954-9.6-6.954V5.4h19.2z"></path></svg>
         </a>
         <a href="{{ site.linkedin }}" target="_blank" title="LinkedIn">
-          <svg height="24" width="24" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.156 1.459-2.156 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+          <svg height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.156 1.459-2.156 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
         </a>
       </div>
+
+        <!-- Now Playing: YouTube/Spotify embed (configure PLAYLIST_ID or embed URL) -->
+        <div class="now-playing" style="margin-top: 1rem;">
+          <h4>🎵 Now Playing</h4>
+          <!-- Spotify embed: configure `spotify_playlist_id` in _config.yml (playlist ID only) -->
+          <div class="now-playing-embed">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6OQ5GWZjSEsRYEs7lYbb7m?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
       </header>
       <section>
       {% include navigation.html %}
@@ -70,5 +80,212 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      // Prevent right-click and dragging on the site logo to discourage casual download
+      (function(){
+        var logo = document.getElementById('site-logo');
+        if (logo) {
+          logo.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+          logo.addEventListener('mousedown', function(e){ if (e.button === 2) e.preventDefault(); });
+          // Extra: disable touch callout on iOS
+          logo.style['-webkit-touch-callout'] = 'none';
+        }
+      })();
+    </script>
+    <script>
+      // Update current time and date
+      function updateTime() {
+        const now = new Date();
+        const timeElement = document.getElementById('current-time');
+        const dateElement = document.getElementById('current-date');
+        
+        if (timeElement) {
+          timeElement.textContent = now.toLocaleTimeString('en-US', {
+            hour12: false,
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+          });
+        }
+        
+        if (dateElement) {
+          dateElement.textContent = now.toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+          });
+        }
+      }
+
+      // Fetch GitHub stats
+      async function fetchGitHubStats() {
+        try {
+          const response = await fetch('https://api.github.com/users/waydxd');
+          const data = await response.json();
+          
+          document.getElementById('repo-count').textContent = data.public_repos || '0';
+          document.getElementById('follower-count').textContent = data.followers || '0';
+          document.getElementById('following-count').textContent = data.following || '0';
+        } catch (error) {
+          console.log('GitHub API error:', error);
+          document.getElementById('repo-count').textContent = 'N/A';
+          document.getElementById('follower-count').textContent = 'N/A';
+          document.getElementById('following-count').textContent = 'N/A';
+        }
+      }
+
+      // Fetch Weather data
+      async function fetchWeather() {
+        try {
+          // Using OpenWeatherMap API (you'll need to get a free API key)
+          // For demo purposes, using static data
+          const weatherData = {
+            temp: '24°C',
+            description: 'Partly cloudy'
+          };
+          
+          document.getElementById('temp').textContent = weatherData.temp;
+          document.getElementById('weather-desc').textContent = weatherData.description;
+        } catch (error) {
+          console.log('Weather API error:', error);
+          document.getElementById('temp').textContent = 'N/A';
+          document.getElementById('weather-desc').textContent = 'Weather unavailable';
+        }
+      }
+
+      // Fetch GitHub Activity
+      async function fetchGitHubActivity() {
+        try {
+          const response = await fetch('https://api.github.com/users/waydxd/events/public?per_page=3');
+          const events = await response.json();
+          
+          const activityContainer = document.getElementById('github-activity');
+          activityContainer.innerHTML = '';
+          
+          events.slice(0, 3).forEach(event => {
+            const item = document.createElement('div');
+            item.className = 'activity-item';
+            
+            let actionText = '';
+            switch(event.type) {
+              case 'PushEvent':
+                actionText = `Pushed to ${event.repo.name}`;
+                break;
+              case 'CreateEvent':
+                actionText = `Created ${event.payload.ref_type} in ${event.repo.name}`;
+                break;
+              case 'IssuesEvent':
+                actionText = `${event.payload.action} issue in ${event.repo.name}`;
+                break;
+              default:
+                actionText = `${event.type.replace('Event', '')} in ${event.repo.name}`;
+            }
+            
+            item.textContent = actionText;
+            activityContainer.appendChild(item);
+          });
+        } catch (error) {
+          console.log('GitHub Activity error:', error);
+          document.getElementById('github-activity').innerHTML = '<div class="activity-item">Unable to load activity</div>';
+        }
+      }
+
+      // Fetch Dev.to articles
+      async function fetchDevToArticles() {
+        try {
+          // For demo purposes, using static data since Dev.to API requires authentication
+          const articles = [
+            { title: 'Building Modern Web Apps', url: '#' },
+            { title: 'JavaScript Best Practices', url: '#' },
+            { title: 'CSS Grid vs Flexbox', url: '#' }
+          ];
+          
+          const articlesContainer = document.getElementById('devto-articles');
+          articlesContainer.innerHTML = '';
+          
+          articles.forEach(article => {
+            const item = document.createElement('div');
+            item.className = 'article-item';
+            item.innerHTML = `<a href="${article.url}" target="_blank">${article.title}</a>`;
+            articlesContainer.appendChild(item);
+          });
+        } catch (error) {
+          console.log('Dev.to articles error:', error);
+          document.getElementById('devto-articles').innerHTML = '<div class="article-item">Unable to load articles</div>';
+        }
+      }
+
+      // Random quotes array
+      const quotes = [
+        "The best way to predict the future is to invent it. — Alan Kay",
+        "Code is like humor. When you have to explain it, it's bad. — Cory House",
+        "First, solve the problem. Then, write the code. — John Johnson",
+        "Experience is the name everyone gives to their mistakes. — Oscar Wilde",
+        "In order to be irreplaceable, one must always be different. — Coco Chanel",
+        "Java is to JavaScript what car is to Carpet. — Chris Heilmann",
+        "The most disastrous thing that you can ever learn is your first programming language. — Alan Kay",
+        "Any fool can write code that a computer can understand. Good programmers write code that humans can understand. — Martin Fowler",
+        "The only way to learn a new programming language is by writing programs in it. — Dennis Ritchie",
+        "Programming isn't about what you know; it's about what you can figure out. — Chris Pine"
+      ];
+
+      // Update daily quote
+      function updateDailyQuote() {
+        const quoteElement = document.getElementById('daily-quote');
+        if (quoteElement) {
+          const today = new Date();
+          const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+          const quoteIndex = dayOfYear % quotes.length;
+          quoteElement.textContent = quotes[quoteIndex];
+        }
+      }
+
+      // Update last update time
+      function updateLastUpdate() {
+        const lastUpdateElement = document.getElementById('last-update');
+        if (lastUpdateElement) {
+          const now = new Date();
+          lastUpdateElement.textContent = now.toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric'
+          });
+        }
+      }
+
+      // Initialize widgets when page loads
+      document.addEventListener('DOMContentLoaded', function() {
+        updateTime();
+        updateDailyQuote();
+        updateLastUpdate();
+
+        // Only invoke data fetchers if their target containers exist
+        if (document.getElementById('repo-count')) {
+          fetchGitHubStats();
+          setInterval(fetchGitHubStats, 5 * 60 * 1000);
+        }
+
+        if (document.getElementById('temp')) {
+          fetchWeather();
+        }
+
+        if (document.getElementById('github-activity')) {
+          fetchGitHubActivity();
+          setInterval(fetchGitHubActivity, 10 * 60 * 1000);
+        }
+
+        if (document.getElementById('devto-articles')) {
+          fetchDevToArticles();
+        }
+        
+        // Update time every second
+        setInterval(updateTime, 1000);
+        
+        // Load Twitter widgets
+        if (typeof twttr !== 'undefined') {
+          twttr.widgets.load();
+        }
+      });
+    </script>
   </body>
 </html>
