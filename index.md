@@ -28,12 +28,12 @@ I'm passionate about full-stack development — I love crafting frontends just a
 ---
 
 ## 🛠 Featured Projects
-
-### [**Paopao-ce**](https://github.com/waydxd/paopao-ce)
+### [**Paopao-ce (Forked & Customized for Internship)**](https://github.com/waydxd/paopao-ce)
 **Tech Stack:** Go, Gin-gonic, Vue.js, MySQL  
-- Forked and maintained a public forum project, resolving critical dependencies and runtime issues
-- Implemented new backend routes, session sharing mechanisms, and comprehensive moderator tools
-- Enhanced user experience with NSFW content filtering and modern UI/UX using Naive UI
+- Forked and tailored an open-source forum platform to meet company-specific requirements  
+- Resolved critical dependency and runtime issues for production stability  
+- Implemented new backend routes, session sharing, and moderator tools  
+- Enhanced user experience with NSFW content filtering and modern UI/UX using Naive UI 
 
 ### [**Manganesium**](https://github.com/waydxd/manganesium)
 **Tech Stack:** Kotlin, Ktor, Vue.js, MapDB  
