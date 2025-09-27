@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1758983289.44572 "/Users/wayd/waydxd.github.io/CV.tex" "CV.pdf" "CV" 1758983290.84084 0
-  "/Users/wayd/waydxd.github.io/CV.tex" 1758983289.22555 4725 916ddafab6ba48d7fabd28b809c65e13 ""
+["pdflatex"] 1758996079.00247 "/Users/wayd/waydxd.github.io/CV.tex" "CV.pdf" "CV" 1758996080.36512 0
+  "/Users/wayd/waydxd.github.io/CV.tex" 1758996078.76176 4757 229a243736334f42168e4a78f8daf5a6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1622837620 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -206,9 +206,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758966563 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "CV.aux" 1758983290.69173 700 029cb732248f6a95271dc035b19c8def "pdflatex"
-  "CV.out" 1758983290.69234 627 e1feae1406164669b804e5cd9aba14ae "pdflatex"
-  "CV.tex" 1758983289.22555 4725 916ddafab6ba48d7fabd28b809c65e13 ""
+  "CV.aux" 1758996080.22101 700 029cb732248f6a95271dc035b19c8def "pdflatex"
+  "CV.out" 1758996080.22161 627 e1feae1406164669b804e5cd9aba14ae "pdflatex"
+  "CV.tex" 1758996078.76176 4757 229a243736334f42168e4a78f8daf5a6 ""
   (generated)
   "CV.aux"
   "CV.log"
