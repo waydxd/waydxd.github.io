@@ -1,0 +1,87 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.87]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xurl}
+\usepackage{enumitem}
+\usepackage{microtype}
+\setlist[itemize]{leftmargin=*, topsep=0.2ex, partopsep=0ex, parsep=0ex, itemsep=0.2ex}
+
+% Custom list style: chevrons for lists (used throughout the CV)
+\newlist{chevitem}{itemize}{1}
+\setlist[chevitem]{label=$\triangleright$, labelsep=0.45em, leftmargin=*, itemsep=0.2ex, topsep=0.2ex}
+
+% Personal data
+\name{Chan Wing Yu,}{Jenson}
+\phone[mobile]{+852~55411754}
+\email{waydxd@outlook.com}
+\social[github]{waydxd}
+\social[linkedin]{waydxd}
+\homepage{waydxd.github.io}
+
+\begin{document}
+\makecvtitle
+
+\section{Professional Summary}
+\cvitem{}{Dedicated Computer Science student with strong programming foundations and systems knowledge. Experienced in full-stack development, AI integration, and open-source contributions. Proficient across multiple operating systems and passionate about creating innovative solutions with modern technologies.}
+
+\section{Education}
+\cventry{2022--2026}{Bachelor of Engineering in Computer Science}{The Hong Kong University of Science and Technology}{Hong Kong}{}{\textit{Focus: Software Development and Computer Systems}}
+\cventry{2016--2022}{Hong Kong Diploma of Secondary Education}{Raimondi College}{Hong Kong}{}{Achieved 5* in ICT, 5 in Physics}
+
+\section{Professional Experience}
+
+\cventry{Jun--Aug 2025}{Cyber Security Analyst (AI Developer)}{Hoplite Technology Limited}{Hong Kong}{}{\textit{Summer Internship} \hfill \textcolor{gray}{\small\url{https://www.hoplite-tech.com/}}
+\begin{chevitem}
+\item Developed AI-powered applications including Reddit scraper (Go), meal planner (Next.js), and OTP authentication system
+\item Implemented custom Langflow AI workflows and Microsoft AutoGen agent orchestration
+\item Built data visualization tools for MongoDB analytics and menu processing systems
+\item Gained hands-on experience with cloud deployment (AWS, Docker, Kubernetes) and AI integration
+\end{chevitem}}
+
+\cventry{Jun--Aug 2024}{Junior Programmer}{Radiance Tech International}{Hong Kong}{}{\textit{Summer Internship} \hfill \textcolor{gray}{\small\url{https://radiance.com.hk/}}
+\begin{chevitem}
+\item Developed full-stack solutions for company website and standalone forum application
+\item Built backend APIs using Golang with MySQL database integration
+\item Implemented frontend features using Vue.js with RESTful API consumption
+\end{chevitem}}
+
+\section{Key Projects}
+
+\cventry{}{\textbf{Paopao-ce Forum Platform}}{Go, Gin, Vue.js, MySQL}{Open Source}{}{\textcolor{gray}{\small\url{https://github.com/waydxd/paopao-ce}}
+\begin{chevitem}
+\item Forked and enhanced open-source web forum, resolving critical dependency and runtime issues
+\item Integrated MySQL/MariaDB databases with new feature development and session management
+\item Implemented advanced community features including moderation tools and NSFW content filtering
+\item Designed responsive UI/UX using Vue 3 and Naive UI component library
+\end{chevitem}}
+
+\cventry{}{\textbf{Manganesium Search Engine}}{Kotlin, Ktor, Vue.js, MapDB}{Academic Project}{}{\textcolor{gray}{\small\url{https://github.com/waydxd/maganesium}}
+\begin{chevitem}
+\item Developed full-stack search engine with advanced term and link-based scoring algorithms
+\item Built asynchronous web crawler with optimized inverted index and intelligent caching system
+\item Created responsive SPA frontend featuring query history and real-time autocomplete
+\item Led integration of frontend design with backend crawler and search optimization
+\end{chevitem}}
+
+\cventry{}{\textbf{Exam Management System}}{Java, JOOQ, JavaFX, SQLite}{Team Project}{}{\textcolor{gray}{\small\url{https://github.com/waydxd/COMP3111-Project}}
+\begin{chevitem}
+\item Designed comprehensive exam management platform with multi-role portal system
+\item Implemented robust database operations using JOOQ ORM with SQLite backend
+\item Developed intuitive JavaFX GUI supporting student, teacher, and administrator workflows
+\item Achieved high test coverage using JUnit and Mockito with automated Maven builds
+\end{chevitem}}
+
+\section{Technical Skills}
+
+\cvitem{Programming Languages}{C/C++, Python, Java, Kotlin, Golang, TypeScript/JavaScript}
+\cvitem{Web Technologies}{HTML5, CSS3, Node.js, Vue.js, Next.js, RESTful APIs, Laravel}
+\cvitem{Databases \& Tools}{MySQL, SQLite, MongoDB, JOOQ, MapDB}
+\cvitem{Machine Learning}{PyTorch, TensorFlow, Keras, NumPy, Pandas, Matplotlib}
+\cvitem{DevOps \& Cloud}{Docker, Kubernetes, AWS, Git, Maven, Apache}
+\cvitem{Operating Systems}{Linux, macOS, Windows}
+
+\end{document}
