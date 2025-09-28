@@ -5,7 +5,7 @@ title: "COMP 4461 Portfolio | Jenson Chan"
 
 # COMP 4461 — Human Computer Interaction
 
-**Instructor:** TBD  
+**Instructor:** MA Xiaojuan
 **Focus:** User-centered design, prototyping, evaluation methods, and accessibility
 
 A chronological collection of reflections, design work, and learning milestones.
