@@ -32,8 +32,7 @@ A comprehensive collection of my coursework, projects, and learning journey at H
 - **COMP 4621** — Computer and Communication Networks
 - **COMP 4901a** — Distributed Systems
 
-
-- **AWS SAA** — [Certification details](/aws-saa.html)
+- **AWS SAA (In progress)** — [Certification details](/aws-saa.html)
 
 ### Mathematics & Statistics
 

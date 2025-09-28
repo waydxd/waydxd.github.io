@@ -1,17 +1,27 @@
 ## Introduction
+
 ### 🌟 Purpose
+
 - Helps you **weigh the pros and cons** of architectural decisions when building on AWS.
 - Teaches **best practices** for designing and operating **secure, reliable, efficient, cost-effective, and sustainable** workloads.
+
 ### 🧭 How It Works
+
 - **Consistent Evaluation**: Measure your architecture against cloud best practices.
 - **Constructive Reviews**: It’s a collaborative discussion, not an audit.
 - **Foundational Questions**: Guides you in checking if your design aligns with modern cloud qualities.
+
 ### 📚 Origins & Expertise
+
 - Draws on **years of AWS Solutions Architects’ experience** across industries.
 - Continuously refined as AWS evolves and learns from customer workloads.
+
 ### 👥 Who It’s For
+
 - CTOs, architects, developers, and operations teams designing or running cloud workloads.
+
 ### 🛠️ Supporting Tools & Resources
+
 - **AWS Well-Architected Tool**: Free service to review and improve workloads.
 - **Well-Architected Labs**: Hands-on code and documentation for applying best practices.
 - **AWS Partner Program**: Certified partners who can help review and enhance your systems.
