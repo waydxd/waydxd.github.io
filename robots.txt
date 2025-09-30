@@ -1,0 +1,6 @@
+# robots.txt — Block all crawlers
+# Created: 2025-10-01
+# This prevents well-behaved crawlers (Google, Bing, etc.) from crawling any URL on the site.
+
+User-agent: *
+Disallow: /
