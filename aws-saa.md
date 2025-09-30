@@ -37,6 +37,8 @@ This page summarizes the skills covered by the certification, recommended study 
 4. Week 10–12: Practice exams, review weak areas, and run hands-on projects
 
 ## Notes
+
 - [AWS Well-Architected Framework](/courses/aws/AWS%20Well-Architected%20Framework.html)
 - [AWS Best Practices](/courses/aws/AWS%20Security-Best-Practice.html)
+
 [← Back to Academic Portfolio](/portfolio.html)
