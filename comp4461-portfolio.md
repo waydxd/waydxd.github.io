@@ -20,7 +20,7 @@ A chronological collection of reflections, design work, and learning milestones.
 6. **Lecture 6** — [Design: Ideate & P1 Brainstorming Presentation](/courses/4461/Lecture-6.html) *(P1.1–P1.2)*
 7. **Lecture 7** — [Multimodal Interaction](/courses/4461/Lecture-7.md) *(P1.3 Personal Diary Submission)*
 8. **Lecture 8** — [Human-Robot Interaction](/courses/4461/Lecture-8.md) (HRI) *(P2.0 Project 2 Topic release)*
-9. **Lecture 9** — Design: Prototyping
+9. **Lecture 9** — [Design: Prototyping](/courses/4461/Lecture-9.md) 
 10. **Lecture 10** — Ubiquitous Computing
 11. **Lecture 11** — Evaluation: Preparation & Questionnaire *(Lab: HRI Programming I, Final Video Paper Topic release)*
 12. **Lecture 12** — Evaluation: Heuristic Testing *(Lab: HRI Programming II)*
