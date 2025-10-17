@@ -28,7 +28,7 @@ A comprehensive collection of my coursework, projects, and learning journey at H
 - **COMP 4021** — Internet Computing
 - **COMP 4211** — Machine Learning
 - **COMP 4321** — Search Engines and Applications for Web and Enterprise Data *(Featured project: [Manganesium](https://github.com/waydxd/Manganesium))*
-- **COMP 4521** — Mobile Application Development
+- **COMP 4521** — Mobile Application Development [Notes](/courses/4521/Kotlin-Summary-Notes.html)
 - **COMP 4621** — Computer and Communication Networks
 - **COMP 4901a** — Distributed Systems
 
