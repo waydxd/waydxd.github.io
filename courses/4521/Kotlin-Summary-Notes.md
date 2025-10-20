@@ -6,6 +6,8 @@ Brief notes and examples covering language basics, OOP, functional features, gen
 
 ## 1. Kotlin basics and syntax
 
+Basic language constructs, control flow, and syntax essentials you'll use in nearly every Kotlin program.
+
 ### Functions and variables
 
 ```kotlin
@@ -17,12 +19,16 @@ val immutableVal: Int = 10
 var mutableVar: Int = 20
 ```
 
+This defines a simple function `greet` that returns a greeting string, and shows an immutable (`val`) and mutable (`var`) variable declaration.
+
 ### Null safety
 
 ```kotlin
 var nullableInt: Int? = null
 nullableInt = 5
 ```
+
+Shows Kotlin's nullable type (`Int?`) which can hold `null`; assigning a value later is safe when you check for null before using it.
 
 ### Control flow
 
@@ -44,6 +50,8 @@ val result = when (x) {
 println(result)
 ```
 
+Demonstrates `if` for branching, a `for` loop with a step, and `when` as a powerful multi-branch expression that returns a value.
+
 ### String templates
 
 ```kotlin
@@ -52,7 +60,11 @@ println("Hello, $name!")
 println("Sum: ${5 + 3}")
 ```
 
+Shows string templates: `$name` inserts a variable, and `${...}` evaluates an expression inside the string.
+
 ## 2. Object-oriented and structural concepts
+
+Core OOP features and Kotlin-specific structural types that help model data and behavior.
 
 ### Classes and constructors
 
@@ -67,6 +79,8 @@ class Person(val name: String) {
     fun greet() = "Hi, I'm $name and I'm $age years old."
 }
 ```
+
+Defines a `Person` class with a primary constructor, a secondary constructor, a mutable property `age`, and a member function `greet` that returns a formatted string.
 
 ### Specialized classes
 
@@ -85,6 +99,8 @@ object Singleton {
 }
 ```
 
+`data class` provides boilerplate (equals, toString), `enum` models a fixed set of values, `sealed class` encodes restricted hierarchies for exhaustive `when`, and `object` creates a singleton.
+
 ### Infix functions
 
 ```kotlin
@@ -92,6 +108,8 @@ infix fun Int.add(x: Int) = this + x
 val sum = 5 add 10
 println(sum) // 15
 ```
+
+Defines an infix extension function to make `5 add 10` look like a natural language operation; useful for DSL-style APIs.
 
 ### Property delegates
 
@@ -108,7 +126,11 @@ var observedValue: Int by Delegates.observable(0) { prop, old, new ->
 observedValue = 10
 ```
 
+Shows `by lazy` to compute a value on first access, and `Delegates.observable` to react to property changes with a callback.
+
 ## 3. Functional programming and collections
+
+Functional-style utilities, lambdas, and collection helpers for expressive and concise data processing.
 
 ### Default arguments
 
@@ -120,6 +142,8 @@ fun greet(name: String = "Guest") {
 greet()
 greet(name = "Alice")
 ```
+
+Demonstrates default parameter values so callers can omit arguments and shows calling with and without named arguments.
 
 ### Lambdas and function types
 
@@ -140,6 +164,8 @@ val anonFunc = fun(x: Int): Int {
 println(anonFunc(5))
 ```
 
+Examples of lambda literals, function types, extension function types (`String.(Int)`), collection iteration with `forEach`, and an anonymous function with an explicit `return`.
+
 ### Collections helpers
 
 ```kotlin
@@ -151,7 +177,11 @@ val mapped = immutableList.map { it * 2 }
 val grouped = immutableList.groupBy { it % 2 }
 ```
 
+Shows immutable vs mutable lists and common collection operations: `filter`, `map`, and `groupBy` for transforming and grouping data.
+
 ## 4. Generics
+
+How to write reusable, type-safe code with generic classes, functions, and variance rules.
 
 ### Generic classes and functions
 
@@ -163,6 +193,8 @@ fun <T> singletonList(item: T): List<T> {
 }
 ```
 
+A generic `Box` holds a value of any type `T`, and `singletonList` demonstrates a generic function returning a typed list.
+
 ### Type constraints
 
 ```kotlin
@@ -171,6 +203,8 @@ fun <T : Comparable<T>> sortList(list: List<T>) {
 }
 ```
 
+Shows constraining a generic type to `Comparable` so you can order elements inside the function.
+
 ### Variance
 
 ```kotlin
@@ -178,7 +212,11 @@ interface Source<out T> { fun next(): T }
 interface Sink<in T> { fun accept(item: T) }
 ```
 
+`out` marks a type as producer (covariant) and `in` as consumer (contravariant), allowing safe subtyping relationships for generics.
+
 ## 5. Kotlin in Android and Jetpack Compose
+
+Examples and patterns for building UI with Compose and managing state, coroutines, and modifiers.
 
 ### Composables
 
@@ -188,6 +226,8 @@ fun Greeting(name: String) {
     Text(text = "Hello, $name!")
 }
 ```
+
+A simple Compose `@Composable` function that emits a `Text` UI element showing a greeting.
 
 ### State management
 
@@ -201,6 +241,8 @@ fun DiceRoller() {
     }
 }
 ```
+
+Illustrates local UI state in Compose using `remember` and `mutableStateOf`, and updating state on button clicks to recompose the UI.
 
 ### Coroutines and Flow (simple examples)
 
@@ -216,17 +258,25 @@ val stateFlow = MutableStateFlow(0)
 stateFlow.collect { value -> println(value) }
 ```
 
+Shows launching a coroutine (note: prefer structured concurrency over `GlobalScope`) and collecting a `StateFlow` which emits state updates.
+
 ### Modifier example
 
 ```kotlin
 Modifier.padding(16.dp).background(Color.Red)
 ```
 
+Chained `Modifier` calls add layout and styling information to Compose UI elements; here it adds padding and a red background.
+
 ## 6. Network programming with coroutines and Retrofit
+
+Practical networking patterns: using coroutines with Retrofit, JSON parsing, and UI-state handling.
 
 ### Why networking is special
 
 - Network requests may block the main thread; use coroutines to keep the UI responsive.
+
+Networking should be done off the main thread (using coroutines) and UI state must reflect loading, success, and error.
 
 ### Coroutines basics in ViewModel
 
@@ -235,6 +285,8 @@ viewModelScope.launch {
     // Coroutine code here
 }
 ```
+
+Shows launching a coroutine tied to a ViewModel lifecycle so work is cancelled when the ViewModel is cleared.
 
 ### Retrofit setup (basic)
 
@@ -258,11 +310,15 @@ object MarsApi {
 }
 ```
 
+Builds a `Retrofit` instance and exposes a lazily-initialized service to make network calls defined by `MarsApiService`.
+
 ### Internet permission (AndroidManifest)
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
+
+Declares the Android permission required to perform network requests from the app.
 
 ### Launching network requests in ViewModel
 
@@ -279,6 +335,8 @@ private fun getMarsPhotos() {
 }
 ```
 
+Shows making a network call inside a coroutine, handling success by updating UI state and catching IO exceptions to set an error state.
+
 ### JSON parsing with kotlinx.serialization
 
 ```kotlin
@@ -288,6 +346,8 @@ data class MarsPhoto(
     @SerialName("img_src") val imgSrc: String
 )
 ```
+
+Defines a serializable data class mapping JSON fields to Kotlin properties; `@SerialName` maps `img_src` to `imgSrc`.
 
 ### Retrofit with Kotlin serialization
 
@@ -303,6 +363,8 @@ interface MarsApiService {
 }
 ```
 
+Shows configuring Retrofit with a Kotlin serialization converter to parse JSON responses directly into `MarsPhoto` objects.
+
 ### UI state handling
 
 ```kotlin
@@ -314,6 +376,8 @@ sealed interface MarsUiState {
 
 var marsUiState by mutableStateOf<MarsUiState>(MarsUiState.Loading)
 ```
+
+Encodes UI states as a sealed interface to make the UI react to `Loading`, `Success`, and `Error` cases in a type-safe way.
 
 ### Repository and manual DI
 
@@ -329,6 +393,8 @@ class MarsViewModel(private val repository: MarsRepository) : ViewModel() {
 val repository = MarsRepository(MarsApi.retrofitService)
 val viewModel = MarsViewModel(repository)
 ```
+
+The repository wraps API calls and can be injected into the ViewModel to separate concerns and make testing easier.
 
 ### Image loading with Coil in Compose
 
