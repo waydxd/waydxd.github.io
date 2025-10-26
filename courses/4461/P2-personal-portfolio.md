@@ -24,7 +24,9 @@ The interview with Christy provided the **core mandate** for the HRI agent, chal
     
 
 > **Process Documentation:** Evidence of this stage includes **screenshots of the Microsoft Teams interview with Christy**. Due to privacy concern, Christy prefers not to share the recording to others.
-![[Screenshot 2025-10-26 at 12.34.09 PM.png]]
+
+![Interview screenshot](/courses/4461/Screenshot%202025-10-26%20at%2012.34.09%20PM.png)
+
 ### B. Secondary Findings (Reddit Survivor Accounts)
 
 The secondary research was personally moving and provided crucial **contextual survival constraints**. Reading firsthand accounts of civil war solidified my conviction that the HRI solution had to be simple, discreet, and reliable:
@@ -72,13 +74,31 @@ However, this stage introduced a significant **tooling constraint**: we were loc
     
 
 > **Process Documentation:** The **video footage of the app usage** demonstrates the fully functional vertical paths: Voice Intake, Queue Handoff, and Multilingual Announcement Playback.
-> ![[Diary.mp4]]
+> <video controls preload="metadata" style="max-width:100%;height:auto;">
+> <source src="/courses/4461/Diary.mp4" type="video/mp4">
+> Your browser does not support the video tag.
+> </video>
 
-![[music_80OhDr6r.mp4]]
+<p>
+<video controls preload="metadata" style="max-width:100%;height:auto;">
+  <source src="/courses/4461/music_80OhDr6r.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</p>
 
-![[sidebar_BCrJaUlT.mp4]]
+<p>
+<video controls preload="metadata" style="max-width:100%;height:auto;">
+  <source src="/courses/4461/sidebar_BCrJaUlT.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</p>
 
-![[sidebar_BCrJaUlT copy.mp4]]
+<p>
+<video controls preload="metadata" style="max-width:100%;height:auto;">
+  <source src="/courses/4461/sidebar_BCrJaUlT copy.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</p>
 
 **Reflection on AI Usage ("Vibe Coding"):**
 
@@ -94,7 +114,9 @@ In the final documentation phase, my focus shifted to **translating technical ef
     
 
 > **Results Documentation:** The **questionnaire report charts** summarize the user satisfaction, confidence, and cognitive load metrics gathered during the usability test runs, demonstrating the success of the HRI design.
-![[4461.pdf]]
+
+<iframe src="/courses/4461/4461.pdf" width="100%" height="600px"></iframe>
+
 - **Documentation:** I authored the detailed descriptions of the **horizontal prototype** and created the **"System at a Glance" diagram**. My design philosophy here was to provide a visual aid that instantly communicated the system’s complexity to a non-technical audience. I was passionate about this diagram because it showed the full scope of our design thinking, even if some parts were simulated.
     
 
