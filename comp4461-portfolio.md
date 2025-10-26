@@ -45,8 +45,8 @@ A chronological collection of reflections, design work, and learning milestones.
 **Project 1: Designing for Aquatic Visitors**  
 [Personal Portfolio & Reflections](/courses/COMP4461-P1-personal-portfolio.html)
 
-**Project 2: TBD**  
-*Coming soon...*
+**Project 2: Human-Robot Interaction for Disaster Management**  
+[Personal Portfolio & Reflections](/courses/4461/P2-personal-portfolio.html)
 
 **Project 3: TBD**  
 *Coming soon...*
