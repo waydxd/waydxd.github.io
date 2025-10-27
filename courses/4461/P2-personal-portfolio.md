@@ -1,5 +1,8 @@
 # Project 2: Personal Diary and Reflection
 
+<img src="/courses/4461/COMP4461.png" alt="Interview screenshot" style="display:block;margin:0 auto;max-width:640px;width:100%;height:auto;" />
+
+
 **Project Title:** **Human-Robot Interaction for Disaster Management** 
 Artificial Haven
 **Submission:** P2.3 Personal Diary Page **Date:** October 26, 2025
