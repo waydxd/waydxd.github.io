@@ -14,11 +14,36 @@ Final Solution: An Asynchronous Virtual Shared Home and Companion Pet for long-d
 Our group followed a rigorous design process, resulting in key insights, three tested concepts, and a final functional prototype.
 
 - **Needfinding (Empathize):** We identified the target community as university students in Long-Distance Relationships (LDRs). We conducted 7 semi-structured interviews to understand how current tools fail to recreate a sense of "shared context." The primary finding was the desire for immersive, but low-effort, ways to feel co-present across time zones.
+ 
 - **Ideation and Storyboarding:** We generated three core concepts—the Haptic Suit, the VR Reconciliation Space, and the VR Shared Space/Sandbox Game (which became our final solution). As the storyboard drawer, I used AI tools and iterative prompting to create the visuals for these concepts, particularly the VR Game narrative.
 - **Storyboard Visualization:** The core narrative for the chosen VR Game/Shared Space concept was visualized through a sequence of panels showing how presence is maintained across time zones.
 - **Evaluation (Speed Dating):** We tested these concepts and gathered feedback from three external participants, which confirmed that the Shared Space concept was the most feasible and desirable, provided it prioritized simplicity and persistent engagement.
-- **Final Prototype (EverPresence):** The final prototype, despite the reliance on the unstable Spatial SDK, demonstrated the persistent shared virtual space, the co-owned digital pet, and the key asynchronous VR-to-AR memo system.
+
+ 
+
 - **Final Prototype Visualization:** The final functional prototype demonstrated the persistent shared virtual space and the interaction with the companion pet.
+
+**Speed Dating Results (summary):**
+
+| Concept | Feedback and Insights |
+|---|---|
+| VR Shared Space / Sandbox Game | "Shared virtual environments foster intimacy and closeness. To succeed, the game must be simple to use and offer rich, engaging activities." |
+| Haptic Suits | "The idea of touch simulation excites users, but skepticism remains about realism. Clearer demos and natural metaphors for touch are needed to build trust." |
+| VR Reconciliation Space | "Potential for conflict resolution is strong, but success depends on asynchronous design that motivates participation without requiring perfect cooperation or time alignment." |
+| AR Companion | "Emotional presence through notes, decorations, and reminders feels personal and functional. However, privacy safeguards and calendar synchronization are essential to make this viable." |
+
+
+**Interviewee demographics (summary):**
+
+| Index | Demographics | Results |
+|---:|---|---|
+| 1 | 23 M, In LDR | Extroverted · Text-only preferred · 10/10 XR with girlfriend/friends · VR experience · $1,000 USD budget · Concerns: authenticity, catfishing · Challenge: travel cost |
+| 2 | 24 M, Single | Introverted · Dislikes video · Strongly against XR ("embarrassing") · VR goggles experience · 1,000 CNY budget · Concerns: privacy, authenticity · Challenges: time, emotional distance |
+| 3 | 21 M, Single | Introverted · Has long-distance contacts · Open to XR if equipment available · No XR experience · Willing to buy high-end (e.g., Vision Pro) · Concerns: privacy, authenticity, motion sickness, cost · Challenges: time, travel cost, emotional distance |
+| 4 | 20 M (bisexual), In LDR (UK) | Introverted ISFP · Daily text + calls · Tried VR once · Open to try XR but $0 budget · Concerns: cost #1, motion sickness, privacy · Challenges: time-zone, travel cost, emotional distance |
+| 5 | 24 F, In LDR | Values physical touch · In-person >> video > phone > text · No XR experience · Very willing (prefers AR) · ~5,000 RMB/NTD budget · Concerns: privacy, lag, device size · Challenges: no shared daily life, lack of hugs, privacy at home |
+| 6 | 20 F, Multiple past LDRs | Daily text/voice essential · Very willing to adopt XR for emotional closeness · No XR experience · Budget ≤ Vision Pro price · Top concerns: data privacy & security, device comfort/style · Wants ambient co-presence, passive mood awareness, shared real-world activities |
+| 7 | 21 F, Single | Prefers in-person · Highly skeptical of XR for socializing · $0 willingness to pay · Only sees value in very specific AR/VR use-cases · Concerns: privacy (home environment), hardware cost · Needs truly new experiences beyond video calls |
 
 ### 2. Ideation and Final Solution
 
