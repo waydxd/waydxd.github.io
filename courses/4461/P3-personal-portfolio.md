@@ -1,7 +1,7 @@
 
 # Project 3: Social Extended Reality (XR) for Local Community
 
-> *Name of groupmates are anoymized*
+> *Name of groupmates are anonymized*
 
 ## Part I: Project Summary & Design Process Analysis
 
