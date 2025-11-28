@@ -1,5 +1,5 @@
 
-# 🌊 Project 3: Social Extended Reality (XR) for Local Community
+# Project 3: Social Extended Reality (XR) for Local Community
 
 > *Name of groupmates are anoymized*
 
@@ -74,7 +74,7 @@ This project was severely undermined by poor team collaboration and a near-total
 - **My Response and Efforts:** I attempted to bridge this gap, actively reaching out to the marginalized teammates who were continuously asking to help. While their subsequent contributions were criticized by the developers, my intent was to ensure that everyone had a role and felt included. Despite my efforts to request clear expectations for my own work (like the presentation draft), the lack of concrete replies made it impossible to meet their shifting standards, leading to criticism that felt unjust.
 - **Lesson Learned:** The greatest lesson from this course, and this project in particular, is that **collaboration skills are as critical as technical or domain knowledge.** A team member with excellent technical knowledge who refuses to collaborate, trust their peers, or maintain communication can be more detrimental to a project's success and team morale than a less-skilled but engaged member. Future projects will necessitate prioritizing potential teammates based on communication reliability and a demonstrable belief in teamwork. This group project experience was a nightmare, and the primary takeaway is the importance of finding collaborators who reply and believe in shared effort, rather than those who centralize control and resort to sudden criticism.
 
-### Peer Evaluation Reflection and Criteria (New Section)
+### Peer Evaluation Reflection and Criteria
 
 The peer evaluation criteria for P3.2 focused on Human Centricity, Soundness of Topic, Practicality of XR, Effect on Augmenting Humans, and Demo Quality. Reflecting on these criteria:
 
