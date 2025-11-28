@@ -48,7 +48,7 @@ A chronological collection of reflections, design work, and learning milestones.
 **Project 2: Human-Robot Interaction for Disaster Management**  
 [Personal Portfolio & Reflections](/courses/4461/P2-personal-portfolio.html)
 
-**Project 3: TBD**  
-*Coming soon...*
+**Project 3: Social Extended Reality (XR) for Local Community**  
+[Personal Portfolio & Reflections](/courses/4461/P3-personal-portfolio.html)
 
 [← Back to Academic Portfolio](/portfolio.html)
