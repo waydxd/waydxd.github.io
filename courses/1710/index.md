@@ -42,6 +42,3 @@ ePortfolio 的結構將按照課程模組劃分，每個模組頁面將包含「
 2. **Evaluate the validity of standard logical arguments**：[您在此展示使用邏輯形式（如否定前項的謬誤）或規則法/范恩圖解法 評估論證對確性的能力。]
 3. **Identify common persuasive stratagems that cannot withstand logical scrutiny**：[您在此展示辨識語言陷阱（如著色字詞、訴諸憐憫）或非形式謬誤（如滑坡謬誤）的能力。]
 4. **Analyze and construct arguments... together with an ability to recognize any relevant fallacies**：[您在此展示拆解複雜問題（例如將混合題拆解為概念/事實/評價部分）和結構化分析（例如批判 AI 爭議）的能力。]
-
-*(請確保在每個模組頁面中，您都能提供足夠的「文物與作品樣本」，例如筆記、幻燈片節錄、討論記錄等，並撰寫「深刻反思」，闡述您在技能、成長和成就方面的進步。)*
-```
