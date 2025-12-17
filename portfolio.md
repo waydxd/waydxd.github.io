@@ -44,7 +44,8 @@ A comprehensive collection of my coursework, projects, and learning journey at H
 ### General Education
 
 - Various Common Core courses exploring humanities, social sciences, and interdisciplinary studies
-- Intro. to Analytical Philosophy, The Art of thinking in the Hong Kong Context...
+- Intro. to Analytical Philosophy, ...
+- **HUMA 1710** — The Art of thinking in the Hong Kong Context [ePortfolio]((/courses/1710/index.html))
 
 ---
 
