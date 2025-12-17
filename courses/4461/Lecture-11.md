@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Lecture 11: Evaluation: Preparation & Questionnaire"
+---
+
 ### 🧭 1. The Survey Research Process
 
 * **Purpose:** Gather insights from users in a structured, measurable way.

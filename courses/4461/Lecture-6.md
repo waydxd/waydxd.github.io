@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Lecture 6: Design: Ideate & P1 Brainstorming Presentation"
+---
+
 ### Overview of the PDF: Design II - Ideate
 This PDF appears to be lecture slides from a course (COMP4461) taught by Xiaojuan Ma at HKUST, focusing on the "Ideate" phase of human-centered design (HCI/design thinking). It builds on the broader design process: **Empathize → Interpret → Ideate → Verify**. The content emphasizes transitioning from user empathy to generating and validating ideas. It's structured iteratively, with examples, frameworks, and tools to make the process practical.
 

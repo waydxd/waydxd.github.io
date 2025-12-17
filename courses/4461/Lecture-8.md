@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Lecture 8: Human-Robot Interaction (HRI)"
+---
+
 ### Overview of the PDF: HCI-12 - Human-Robot Interaction (HRI)
 This PDF is a lecture from COMP4461 (Human-Computer Interaction) taught by Xiaojuan Ma at HKUST in 2025. It explores HRI, building on HCI principles like those from previous lectures (e.g., multimodal interaction). The focus is on how humans and robots interact, from types of robots to design considerations for autonomy, social skills, and intelligence. It starts with historical references (Asimov's laws) and current (2025) examples via videos, then dives into technical and ethical aspects. The lecture emphasizes user-centered design in robotics, linking to real-world applications like collaboration and education. It's richly illustrated with examples, diagrams, and links to demos.
 

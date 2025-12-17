@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Lecture 9: Design: Prototyping"
+---
+
 This is a comprehensive summary and lesson on **Prototyping Methods and Practices** based on the slides you provided.
 
 ***

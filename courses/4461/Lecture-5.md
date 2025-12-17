@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Lecture 5: Design: Empathize"
+---
+
 # Design I: Empathize – A Lecture Summary and Guide
 
 Welcome to this teaching session based on the lecture notes from "Design I: Empathize" by Xiaojuan Ma (COMP4461). These notes explore design as both a practical skill and a mindset, with a focus on the "Empathize" phase of design thinking. I'll break it down step by step, following the structure of the slides, explaining key concepts, providing examples, and highlighting important takeaways. This approach emphasizes human-centered design, drawing from sources like Donald Norman's *Emotional Design* and IDEO's principles.

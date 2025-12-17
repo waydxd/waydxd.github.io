@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Lecture 3 & 4: Understanding Humans"
+---
+
 ### Lesson: Understanding Humans in Human-Computer Interaction (HCI)
 
 Hello! Based on the provided PDF lecture notes by Xiaojuan Ma (from COMP4461, dated around 2025), I'll teach you the key concepts in a structured, engaging way. This is a two-part lecture on human capabilities and their implications for designing effective HCI systems. I'll break it down into sections mirroring the PDF's structure, explaining concepts clearly, highlighting examples, and noting HCI implications. I'll use bullet points for clarity, tables for comparisons, and bold key terms. At the end of major sections, I'll include recap questions to reinforce learning (inspired by the PDF's interactive style).

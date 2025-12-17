@@ -1,3 +1,8 @@
+---
+layout: default
+title: "HUMA 1710 ePortfolio"
+---
+
 # HUMA 1710 思考的藝術@HK ePortfolio 
 ### 導師：Prof. NAM, Sai Lok (藍世樂) / Mr. LAU, Chun Hong Taylor (劉俊康)
 ---

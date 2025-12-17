@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Lecture 7: Multimodal Interaction"
+---
+
 ### Overview of the PDF: HCI-11 - Multimodal Interaction
 This PDF is a set of lecture slides from COMP4461 (Human-Computer Interaction) taught by Xiaojuan Ma at HKUST in 2025. It focuses on **multimodal interaction** in HCI, emphasizing how humans interact with computers using multiple senses beyond just visual or textual input/output. The content is divided into three main parts: **Visual Interaction** (pages 1-55), **Sonification** (pages 56-80), and **Haptic Communication** (pages 81-110), with a brief on multimodal integration. It explores definitions, advantages, limitations, psychological foundations, design methods, and examples in HCI contexts like GUIs, wearables, and pervasive computing.
 

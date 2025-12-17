@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Lecture 10: Ubiquitous Computing"
+---
+
 ### Summary of "HCI-13-UbiComp-MXJ-202509.pdf": Ubiquitous Computing Lecture by Xiaojuan Ma
 
 This 72-page slide deck, presented by Xiaojuan Ma (mxj@cse.ust.hk) for course COMP4461, explores **ubiquitous computing** (UbiComp), emphasizing its integration into everyday life as "everywhere, every day, everybody." Drawing from Mark Weiser's vision in "The Computer for the 21st Century," it describes profound technologies that "disappear" into daily routines, evolving from mainframe and personal computing to pervasive, invisible systems.
